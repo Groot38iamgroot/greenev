@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green EV - Know what you breathe</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-green-500 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-xl font-bold" href="#">
+                <img src="green_ev_logo.png" alt="Green EV" class="mr-2 h-6 inline">
+                Green EV            </a>
+            <div class="hidden md:block">
+                <a href="hhh.html" class="px-3">Profile</a>
+                <a href="pp4.html" class="px-3">Données simplifiées</a>
+                <a href="grt.html" class="px-3">Groot AI</a>
+                <a href="pp3.html" class="px-3">Contact Green EV</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-green-500 text-white p-4">
+       		<a href="hhh.html" class="px-3">Profile</a>
+                <a href="pp4.html" class="px-3">Données simplifiées</a>
+                <a href="grt.html" class="px-3">Groot AI</a>
+                <a href="pp3.html" class="px-3">Contact Green EV</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center h-screen flex flex-col justify-center items-center text-white"
+        style="background-image: url('https://source.unsplash.com/1200x800/?nature');">
+        <h1 class="text-5xl font-bold mb-4 text-center">Know what you breathe</h1>
+        <h2 class="text-lg mb-8 text-center">Your air quality companion</h2>
+        <a href="grt.html" class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-full uppercase font-semibold transition-colors duration-300">Get Started</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">About Green EV</h3>
+            <p class="max-w-3xl mx-auto text-center">Green EV is a company focused on detecting air pollution in different environments. We provide a mobile application that helps you track and monitor the air quality wherever you go.</p>
+            <p class="max-w-3xl mx-auto mt-4 text-center">Our mission is to create a healthier planet by helping individuals make informed decisions about the air they breathe. With our companion app, you'll have the power to know and protect yourself from harmful air pollutants.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <i class="fas fa-check-circle text-5xl text-green-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Real-time Air Quality Monitoring</h4>
+                    <p>Track and monitor air quality levels in real-time.</p>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle text-5xl text-green-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Personalized Recommendations</h4>
+                    <p>Receive personalized recommendations to protect yourself from pollution.</p>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle text-5xl text-green-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Historical Data Analysis</h4>
+                    <p>Analyze historical air quality data and trends.</p>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle text-5xl text-green-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Community Engagement</h4>
+                    <p>Engage with a community of individuals interested in clean air initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-24">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">Our Solution</h3>
+            <p class="max-w-3xl mx-auto text-center">At Green EV, we provide a comprehensive solution to combat air pollution. Our application empowers individuals to detect polluted air and make informed decisions to protect themselves and their loved ones.</p>
+            <p class="max-w-3xl mx-auto mt-4 text-center">With our advanced algorithms and data-driven approach, we are able to accurately measure air quality in various environments. Our solution is user-friendly and provides real-time data so that you can take immediate action.</p>
+            <a href="#" class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-full uppercase font-semibold mt-8 inline-block transition-colors duration-300">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-24 bg-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">Contact Us</h3>
+            <form class="max-w-md mx-auto">
+                <div class="flex flex-wrap -mx-2 mb-4">
+                    <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                        <label for="name" class="block mb-2 font-semibold">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 rounded-lg" placeholder="Your Name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-2">
+                        <label for="email" class="block mb-2 font-semibold">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 rounded-lg" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-2 mb-4">
+                    <div class="w-full px-2">
+                        <label for="message" class="block mb-2 font-semibold">Message</label>
+                        <textarea id="message" class="w-full px-4 py-2 rounded-lg" rows="5"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <button type="submit"
+                    class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-full uppercase font-semibold mt-8 inline-block transition-colors duration-300">Send                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center text-white">
+                <img src="green_ev_logo.png" alt="Green EV" class="mr-2 h-6 inline">
+                <span>Green EV</span>
+            </div>
+            <div class="text-white">
+                <a href="#" class="text-gray-500 hover:text-white px-3">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-white px-3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-white px-3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-white px-3">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
+
